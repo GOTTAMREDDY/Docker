@@ -1,4 +1,4 @@
-FROM nginx:apline
+FROM nginx:alpine
 EXPOSE 80
 RUN adduser -D sada
 RUN rm -rf /usr/share/nginx/html/*
