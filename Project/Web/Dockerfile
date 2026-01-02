@@ -1,0 +1,8 @@
+FROM nginx:alpine
+EXPOSE 80
+RUN adduser sadashiva
+RUN rm -rf /usr/share/nginx/html/*
+RUN curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip
+WORKDIR /usr/share/nginx/html
+RUN unzip /tmp/web.zip
+CMD ["nginx", "-g", "daemon off;"]
