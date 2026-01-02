@@ -1,6 +1,6 @@
 FROM nginx
 EXPOSE 80
-RUN adduser -D sadashiva
+RUN useradd
 RUN rm -rf /usr/share/nginx/html/*
 RUN curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip
 WORKDIR /usr/share/nginx/html
