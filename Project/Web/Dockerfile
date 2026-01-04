@@ -5,7 +5,7 @@ FROM nginx:latest
 EXPOSE 80
 
 # Install curl and unzip if needed
-RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
+#RUN apt-get update && apt-get install -y curl unzip && rm -rf /var/lib/apt/lists/*
 
 # Remove default site config
 RUN rm -f /etc/nginx/conf.d/default.conf
