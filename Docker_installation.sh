@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "===== Installing Docker on Amazon Li ====="
+echo "===== Installing Docker on Amazon Linnux and bash ====="
 
 # Must run as root
 if [ "$EUID" -ne 0 ]; then
