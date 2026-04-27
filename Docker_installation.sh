@@ -11,7 +11,7 @@ fi
 
 # Update system
 yum update -y || dnf update -y
-echo "updated"
+echo "updated code to fill"
 
 # Install Docker
 if command -v yum >/dev/null 2>&1; then
